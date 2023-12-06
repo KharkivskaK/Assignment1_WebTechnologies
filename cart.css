@@ -1,0 +1,75 @@
+/* Basic styling for the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Table header styles */
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Adding some hover effect to table rows */
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Styling the first column (assuming it's a column with row labels) */
+td:first-child {
+  font-weight: bold;
+}
+
+/* Styling alternate rows for better readability */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  /* Hide headers for a more simplified view on small screens */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin-bottom: 15px;
+  }
+
+  td {
+    /* Behaves like a "row" */
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* A table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /* Labeling the data */
+  td:nth-of-type(1):before { content: "ID"; }
+  td:nth-of-type(2):before { content: "Name"; }
+  td:nth-of-type(3):before { content: "Price"; }
+  td:nth-of-type(4):before { content: "Quantity"; }
+}

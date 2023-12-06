@@ -1,0 +1,129 @@
+.product>img, .product2>img{
+            width: 180px;
+        }
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #BE1622;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product,.product2 {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #34516C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+    
+    #products2det {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70wh;
+        text-align: center;
+    }
+
+    #productDetails {
+        max-width: 400px;
+        margin: auto;
+    }
+#clsxbtn{
+    padding: 6px 10px;
+    display: none;
+    cursor: pointer;
+    background-color: #000;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#products2det{
+    display: none;
+    border-radius: 20px !important;
+}
+#productDetails{
+    border: none !important;
+}
+footer{
+    background-color: #34516C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer>#fdiv{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer>#fdiv>.fdiv{
+    flex: 1;
+    margin: 10px;
+}
+
+ul.categories {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.categories li {
+    /*margin-right: 15px;  Adjust the spacing between categories */
+}
+
+ul.categories li:last-child {
+    margin-right: 0;
+    position: relative;
+}
+
+ul.categories a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+ul.categories a:hover {
+    background-color: #555;
+}
+.categories>li>button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.categories>li>.active {
+    background-color: #BE1622;
+    color: #fff;
+}
+
+
