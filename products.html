@@ -5,13 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student's Union Shop - Products</title>
+
+    <!-- Links to the main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Links to a specifique stylesheet for the products page -->
     <link rel="stylesheet" href="products.css">
+
 </head>
 
 <body>
+
+<!-- Head section of the document -->
     <header>
         <img src="logo.png" alt="Shop Logo">
         <h1>Student's Union Shop</h1>
+
+        <!-- Navigation bar to be redirected to three different pages  -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,9 +31,14 @@
         </nav>
     </header>
     <br>
+
+<!-- Button to go back to the main products page -->
     <button onclick="closedetailpage();" id="clsxbtn">Back to Products</button>
 
+<!-- Navigation for product categories -->
     <nav id="pjnav">
+
+        <!-- List of categories for product filtering -->
         <ul class="categories">
             <li><button type="button" id="all" class="form-control active" onclick="filterProducts('All')">Products</button></li>
             <li><button type="button" id="ts" class="form-control" onclick="filterProducts('Tshirt')">T-Shirts</button></li>
@@ -32,28 +47,39 @@
         </ul>
     </nav>
 
+    <!-- Main content area for products -->
     <main id="products">
         <!-- Content for products goes here -->
     </main>
+
+    <!-- Secondary content area for detailed product view -->
     <main id="products2det">
+
+        <!-- Container, that displays product details -->
         <div id="productDetails" class="product"></div>
     </main>
 
+    <!-- Footer section of the page -->
     <footer>
         <div id="fdiv">
 
             <div class="fdiv">
                 <h2>Links</h2>
-                <ul style="list-style: none; padding: 0;">
-                    <!-- <li><a href="#">Link 3</a></li> -->
+
+                <!-- Unordered list for the links -->
+                <ul>
+                    <li><a href="https://www.uclancyprus.ac.cy">UCLan Cyprus</a></li>
+                    <li><a href="https://www.uclansu.co.uk">Student's Union</a></li>
                 </ul>
             </div>
 
+            <!-- Individual block for contact information -->
             <div class="fdiv">
                 <h2>Contact</h2>
                 <p>+357 24 694000</p>
             </div>
 
+            <!-- Individual block for location information -->
             <div class="fdiv">
                 <h2>Location</h2>
                 <p>University Ave 12-14<br>
@@ -63,6 +89,7 @@
         </div>
     </footer>
 
+    <!-- Links to the JavaScript file for the product page functionality -->
     <script src="product.js"></script>
 </body>
 
