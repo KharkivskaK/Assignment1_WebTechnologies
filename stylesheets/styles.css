@@ -101,13 +101,35 @@ a {
     overflow: hidden;
 }
 
+#menuButton {
+    display: none; /* Initially hidden */
+    font-size: 24px; /* Size of the burger icon */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    background: none;
+    border: none;
+    color: white; /* Color of the burger icon */
+}
 
-@media only screen and(max-width: 700px) {
-    nav a:not(:first-child) {display: none;}
-    nav a.icon {
-        float: right;
-        display: block;
+
+/* Media query for screens with a max width of 700px */
+@media screen and (max-width: 700px) {
+    #menuButton {
+        display: block; /* Shows the burger menu button */
     }
+
+    nav ul {
+        display: block; /* Changes layout of nav links */
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    nav a {
+        display: block; /* Each link takes up the full line */
+        margin: 10px;
+    }
+
 }
 
 
