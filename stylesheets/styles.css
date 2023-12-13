@@ -1,0 +1,114 @@
+/* Styling for the body of the webpage */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the header element */
+header {
+    background-color: #BE1622;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Styling for the navigation bar list */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Styling for navigation links */
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+h2 {
+    color: sandybrown;
+}
+
+/* Styling for the main area */
+main {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+/* Styling for the footer area */
+footer {
+    background-color: #34516C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Styling for the flex container inside the footer */
+footer>#fdiv{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Styling for the unordered lists inside footer's flex items */
+footer>#fdiv>.fdiv>ul{
+
+    list-style: none;
+    color: white;
+    flex: 1;
+    margin: 10px;
+}
+
+/* Styling for the links throughout the page */
+a {
+    padding: 5px;
+    text-align: center;
+    color: lightblue;
+}
+
+/* Styling for the containers that hold videos */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    margin-bottom: 20px;
+}
+
+/* Styling for the responsive iframe elements */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 110px;
+}
+
+
+/* Additional styles for the video containers */
+.video-container h2,
+.video-container p {
+    text-align: left;
+}
+
+/* Wrapper for iframe elements */
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+
+@media only screen and(max-width: 700px) {
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+
+

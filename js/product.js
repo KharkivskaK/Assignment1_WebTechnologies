@@ -22,7 +22,7 @@ function parseCSV(csv) {
             // Array
             const clothingArray = ['Tshirt', 'Hoodie', 'Jumper'];
 
-            // The text or name we want to check
+            // The text or name for checking
             const givenText = name;
 
             // Variable to store the matched word
@@ -130,7 +130,6 @@ function closedetailpage(){
     document.getElementById('products2det').style.display = 'none';
     document.getElementById('clsxbtn').style.display = 'none';
     document.getElementById('pjnav').style.display = 'block';
-    // document.getElementById('products').style.display = 'block';
     const products = document.getElementsByClassName('product');
     for (let i = 0; i < products.length; i++) {
         products[i].style.display = 'block';

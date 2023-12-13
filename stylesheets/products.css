@@ -1,6 +1,7 @@
+/* Styling for images inside the products and the products2 containers */
 .product>img, .product2>img{
-            width: 180px;
-        }
+    width: 180px;
+}
 
 body {
     font-family: 'Arial', sans-serif;
@@ -15,6 +16,7 @@ header {
     padding: 1rem;
 }
 
+/* Styling for the navigation bar list */
 nav ul {
     list-style: none;
     padding: 0;
@@ -22,11 +24,13 @@ nav ul {
     justify-content: space-around;
 }
 
+/* Styling for navigation links */
 nav a {
     text-decoration: none;
     color: white;
 }
 
+/* Styling for the main area */
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -34,31 +38,53 @@ main {
     padding: 20px;
 }
 
+/* Styling for product and product2 containers */
 .product,.product2 {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
 }
 
+
+/* Styling for the footer area */
 footer {
     background-color: #34516C;
     color: white;
     text-align: center;
     padding: 1rem;
 }
-    
-    #products2det {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 70wh;
-        text-align: center;
-    }
 
-    #productDetails {
-        max-width: 400px;
-        margin: auto;
-    }
+footer>#fdiv{
+    /* Using the flexbox for the layout */
+    display: flex;
+    justify-content: space-around;
+    /* Allow items to wrap in smaller screens */
+    flex-wrap: wrap;
+}
+
+footer>#fdiv>.fdiv{
+    flex: 1;
+    margin: 10px;
+}
+
+/* Styling for the product details section */
+#products2det {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    text-align: center;
+    border-radius: 20px !important;
+}
+
+/* Styling for individual product details */
+#productDetails {
+    max-width: 400px;
+    margin: auto;
+    border: none !important;
+}
+
+/* Styling for the close button */
 #clsxbtn{
     padding: 6px 10px;
     display: none;
@@ -69,58 +95,39 @@ footer {
     border-radius: 10px;
 }
 
-#products2det{
-    display: none;
-    border-radius: 20px !important;
-}
-#productDetails{
-    border: none !important;
-}
-footer{
-    background-color: #34516C;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-footer>#fdiv{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-footer>#fdiv>.fdiv{
-    flex: 1;
-    margin: 10px;
-}
-
+/* Styling for category list */
 ul.categories {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-ul.categories li {
-    /*margin-right: 15px;  Adjust the spacing between categories */
-}
-
+/* Styling for the last item in category list */
 ul.categories li:last-child {
     margin-right: 0;
     position: relative;
 }
 
+/* Styling for category links */
 ul.categories a {
     text-decoration: none;
     color: #000;
     display: block;
 }
 
+/* Hover effect for the category links */
 ul.categories a:hover {
     background-color: #555;
 }
+
+/* Styling for category buttons */
 .categories>li>button{
     padding: 5px 10px;
     border-radius: 10px;
     cursor: pointer;
 }
+
+
 .categories>li>.active {
     background-color: #BE1622;
     color: #fff;
