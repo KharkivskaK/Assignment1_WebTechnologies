@@ -1,4 +1,4 @@
 # Kateryna Kharkivska
 # URL of the site: 
 # Preferred browser for testing: Google Chrome
-# I have completed up to Marking Criterion " Extended feature to the shopping cart " 1st - class grade in file "Cart.html"
+# I have completed up to Marking Criterion " The adoption of version control with regular quality commits to demonstrate progress throughout the assessment" 1st - class grade 
